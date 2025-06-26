@@ -1,0 +1,47 @@
+<div class="next-analysis-container">
+    <a href="#analys-sektionens-id" class="next-analysis-text-blink">
+        Nästa: Återväxtanalys
+    </a>
+</div>
+
+<style>
+    /* CSS för den blinkande texten */
+    .next-analysis-container {
+        text-align: center; /* Centrerar textlänken om den är i en egen div */
+        margin-top: 3rem; /* Lägg till lite marginal ovanför */
+        margin-bottom: 3rem; /* Lägg till lite marginal nedanför */
+    }
+
+    .next-analysis-text-blink {
+        display: inline-block; /* Gör så att den kan ta marginaler/padding om det skulle behövas i framtiden */
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.5rem;
+        color: rgba(100, 100, 100, 0.5); /* Grå text med 50% opacitet som start */
+        text-decoration: none; /* Tar bort understrykning från länken */
+        transition: color 0.3s ease; /* Mjuk övergång för färg vid hover */
+        animation: textBlink 1s infinite alternate ease-in-out; /* Blink-animation */
+        font-weight: 700;
+    }
+
+    .next-analysis-text-blink:hover {
+        color: rgba(50, 50, 50, 1); /* Mörkare, helt ogenomskinlig grå vid hover */
+        transform: translateY(-2px); /* Lätt lyft vid hover, om du vill ha kvar det */
+    }
+
+    /* Keyframes för textens blink-animation */
+    @keyframes textBlink {
+        0% {
+            color: rgba(100, 100, 100, 0.5); /* Ljusare grå text med 50% transparens */
+        }
+        100% {
+            color: rgba(100, 100, 100, 1); /* Samma grå text, helt ogenomskinlig */
+        }
+    }
+
+    /* Media query för mindre skärmar */
+    @media (max-width: 768px) {
+        .next-analysis-text-blink {
+            font-size: 1.2rem;
+        }
+    }
+</style>
