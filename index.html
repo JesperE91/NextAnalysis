@@ -8,24 +8,19 @@
     /* CSS för den blinkande texten */
     .next-analysis-container {
         text-align: center; /* Centrerar textlänken om den är i en egen div */
-        margin-top: 1rem; /* Lägg till lite marginal ovanför */
-        margin-bottom: 1rem; /* Lägg till lite marginal nedanför */
+        margin-top: 3rem; /* Lägg till lite marginal ovanför */
+        margin-bottom: 3rem; /* Lägg till lite marginal nedanför */
     }
 
     .next-analysis-text-blink {
         display: inline-block; /* Gör så att den kan ta marginaler/padding om det skulle behövas i framtiden */
         font-family: 'Roboto', sans-serif;
-        font-size: 1.6rem;
+        font-size: 2rem;
         color: rgba(100, 100, 100, 0.5); /* Grå text med 50% opacitet som start */
         text-decoration: none; /* Tar bort understrykning från länken */
         transition: color 0.3s ease; /* Mjuk övergång för färg vid hover */
         animation: textBlink 1s infinite alternate ease-in-out; /* Blink-animation */
         font-weight: 700;
-    }
-
-    .next-analysis-text-blink:hover {
-        color: rgba(50, 50, 50, 1); /* Mörkare, helt ogenomskinlig grå vid hover */
-        transform: translateY(-2px); /* Lätt lyft vid hover, om du vill ha kvar det */
     }
 
     /* Keyframes för textens blink-animation */
